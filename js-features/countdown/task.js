@@ -7,4 +7,4 @@ const countdown = function(){
     }
 }
 
-let idInterval = setInterval(countdown, 50);
+const idInterval = setInterval(countdown, 1000);

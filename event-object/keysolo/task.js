@@ -17,6 +17,20 @@ class Game {
   }
 
   registerEvents() {
+
+    document.addEventListener('keydown', onKey);
+    const keyNeed = this.currentSymbol;
+   
+    function onKey(event) {
+      const keyPress = event.key;
+      alert(event.key)
+      alert(this.currentSymbol);
+      if (keyNeed == keyPress) {
+        this.success;
+      }
+    }
+
+   
     /*
       TODO:
       Написать обработчик события, который откликается
